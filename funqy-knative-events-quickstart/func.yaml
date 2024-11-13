@@ -1,0 +1,15 @@
+specVersion: 0.36.0
+name: fungy-knative-event-quickstart
+runtime: quarkus
+created: 2024-11-13T21:01:03.75061+08:00
+invoke: cloudevent
+build:
+  buildEnvs:
+  - name: BP_NATIVE_IMAGE
+    value: "false"
+  - name: BP_JVM_VERSION
+    value: "21"
+  - name: MAVEN_S2I_ARTIFACT_DIRS
+    value: target/quarkus-app
+  - name: S2I_SOURCE_DEPLOYMENTS_FILTER
+    value: lib quarkus-run.jar app quarkus
