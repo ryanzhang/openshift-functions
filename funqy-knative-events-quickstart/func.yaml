@@ -1,5 +1,5 @@
 specVersion: 0.36.0
-name: fungy-knative-event-quickstart
+name: funqy-knative-event-quickstart
 runtime: quarkus
 registry: image-registry.openshift-image-registry.svc:5000/ocp-functions
 created: 2024-11-13T21:01:03.75061+08:00
@@ -20,4 +20,4 @@ build:
   - name: S2I_SOURCE_DEPLOYMENTS_FILTER
     value: lib quarkus-run.jar app quarkus
 deploy:
-  image: image-registry.openshift-image-registry.svc:5000/ocp-functions/fungy-knative-event-quickstart:latest
+  image: image-registry.openshift-image-registry.svc:5000/ocp-functions/funqy-knative-event-quickstart:latest

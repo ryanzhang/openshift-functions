@@ -11,4 +11,4 @@ spec:
     ref:
       apiVersion: serving.knative.dev/v1
       kind: Service
-      name: funqy-knative-events-quickstart
+      name: funqy-knative-event-quickstart
